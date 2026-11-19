@@ -1,0 +1,40 @@
+{
+  "base": {
+    "n": 154,
+    "json_valid_rate": 0.9935064935064936,
+    "in_label_set_rate": 0.6948051948051948,
+    "strict_accuracy": 0.18831168831168832,
+    "lenient_accuracy": 0.18831168831168832,
+    "macro_f1_lenient": 0.16119174131596492,
+    "eval_seconds": 38.3
+  },
+  "lora": {
+    "n": 154,
+    "json_valid_rate": 1.0,
+    "in_label_set_rate": 1.0,
+    "strict_accuracy": 0.7467532467532467,
+    "lenient_accuracy": 0.7467532467532467,
+    "macro_f1_lenient": 0.7191919191919192
+  },
+  "train_minutes": 32.5,
+  "peak_gpu_gb": 11.42,
+  "lora_config": {
+    "r": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "target_modules": [
+      "down_proj",
+      "gate_proj",
+      "k_proj",
+      "o_proj",
+      "q_proj",
+      "up_proj",
+      "v_proj"
+    ]
+  },
+  "lr": 0.0002,
+  "epochs": 2,
+  "n_train": 1540,
+  "n_val": 77,
+  "n_test": 154
+}

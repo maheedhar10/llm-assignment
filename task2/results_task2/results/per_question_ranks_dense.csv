@@ -1,0 +1,16 @@
+q,gold_page,small_100w,large_300w
+"How much training material did Meta process to develop the Llama 2 family, and why did it choose that amount?",5,12.0,1.0
+What were the major improvements introduced in the training pipeline compared with the previous generation?,5,13.0,1.0
+Were Meta's own user-facing products a source of training material for the foundation models?,5,15.0,15.0
+"Which architectural components are responsible for normalization, activation and positional information in the network?",5,1.0,1.0
+Which optimization algorithm was selected to update the model parameters during foundation-model training?,5,5.0,5.0
+How was the learning rate adjusted throughout the foundation model's training?,5,,15.0
+What configuration was used when adapting the pretrained model through supervised instruction training?,9,15.0,19.0
+How many manually annotated examples were collected before the researchers stopped gathering supervised fine-tuning data?,9,1.0,1.0
+How does the system learn to estimate which generated response humans would prefer?,10,2.0,1.0
+What two reinforcement learning approaches were combined during the final alignment stage of the chatbot?,5,2.0,13.0
+What problem does the Ghost Attention technique attempt to solve during extended conversations?,8,3.0,
+Which subword segmentation method is used to convert input text into tokens?,6,8.0,7.0
+How does the model's ability to retain earlier conversational instructions improve across multiple turns?,16,,1.0
+What is the difference in the maximum input context supported by the older and newer model generations?,47,2.0,6.0
+What is the total computational time reported for pretraining the Llama 2 family?,77,5.0,5.0

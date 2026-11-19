@@ -1,0 +1,107 @@
+[
+  {
+    "q": "How much training material did Meta process to develop the Llama 2 family, and why did it choose that amount?",
+    "evidence": "We trained on 2 trillion tokens of data as this provides a good performance\u2013cost trade-off, up-sampling the most factual sources in an effort to increase knowledge and dampen hallucinations.",
+    "ev_start": 11986,
+    "ev_end": 12175,
+    "page": 5
+  },
+  {
+    "q": "What were the major improvements introduced in the training pipeline compared with the previous generation?",
+    "evidence": "Specifically, we performed more robust data cleaning, updated our data mixes, trained on 40% more total tokens, doubled the context length, and used grouped-query attention (GQA) to improve inference scalability for our larger models.",
+    "ev_start": 11384,
+    "ev_end": 11604,
+    "page": 5
+  },
+  {
+    "q": "Were Meta's own user-facing products a source of training material for the foundation models?",
+    "evidence": "Our training corpus includes a new mix of data from publicly available sources, which does not include data from Meta\u2019s products or services.",
+    "ev_start": 11710,
+    "ev_end": 11850,
+    "page": 5
+  },
+  {
+    "q": "Which architectural components are responsible for normalization, activation and positional information in the network?",
+    "evidence": "We use the standard transformer architecture (Vaswani et al., 2017), apply pre-normalization using RMSNorm (Zhang and Sennrich, 2019), use the SwiGLU activation function (Shazeer, 2020), and rotary positional embeddings (RoPE, Su et al. 2022).",
+    "ev_start": 12465,
+    "ev_end": 12706,
+    "page": 5
+  },
+  {
+    "q": "Which optimization algorithm was selected to update the model parameters during foundation-model training?",
+    "evidence": "We trained using the AdamW optimizer (Loshchilov and Hutter, 2017), with",
+    "ev_start": 12966,
+    "ev_end": 13038,
+    "page": 5
+  },
+  {
+    "q": "How was the learning rate adjusted throughout the foundation model's training?",
+    "evidence": "We use a cosine learning rate schedule, with warmup of 2000 steps, and decay final learning rate down to 10% of the peak learning rate.",
+    "ev_start": 13072,
+    "ev_end": 13206,
+    "page": 5
+  },
+  {
+    "q": "What configuration was used when adapting the pretrained model through supervised instruction training?",
+    "evidence": "For supervised fine-tuning, we use a cosine learning rate schedule with an initial learning rate of 2",
+    "ev_start": 25529,
+    "ev_end": 25630,
+    "page": 9
+  },
+  {
+    "q": "How many manually annotated examples were collected before the researchers stopped gathering supervised fine-tuning data?",
+    "evidence": "We stopped annotating SFT after collecting a total of 27,540 annotations.",
+    "ev_start": 24738,
+    "ev_end": 24810,
+    "page": 9
+  },
+  {
+    "q": "How does the system learn to estimate which generated response humans would prefer?",
+    "evidence": "This human feedback is subsequently used to train a reward model, which learns patterns in the preferences of the human annotators and can then automate preference decisions.",
+    "ev_start": 26547,
+    "ev_end": 26720,
+    "page": 10
+  },
+  {
+    "q": "What two reinforcement learning approaches were combined during the final alignment stage of the chatbot?",
+    "evidence": "specifically through rejection sampling and Proximal Policy Optimization (PPO).",
+    "ev_start": 10909,
+    "ev_end": 10986,
+    "page": 5
+  },
+  {
+    "q": "What problem does the Ghost Attention technique attempt to solve during extended conversations?",
+    "evidence": "which we find helps control dialogue flow over multiple turns",
+    "ev_start": 22288,
+    "ev_end": 22349,
+    "page": 8
+  },
+  {
+    "q": "Which subword segmentation method is used to convert input text into tokens?",
+    "evidence": "it employs a bytepair encoding (BPE) algorithm (Sennrich et al., 2016) using the implementation from SentencePiece",
+    "ev_start": 14308,
+    "ev_end": 14415,
+    "page": 6
+  },
+  {
+    "q": "How does the model's ability to retain earlier conversational instructions improve across multiple turns?",
+    "evidence": "we propose Ghost Attention (GAtt), a very simple method inspired by Context Distillation",
+    "ev_start": 50958,
+    "ev_end": 51046,
+    "page": 16
+  },
+  {
+    "q": "What is the difference in the maximum input context supported by the older and newer model generations?",
+    "evidence": "We expand the context window for Llama 2 from 2048 tokens to 4096 tokens.",
+    "ev_start": 164782,
+    "ev_end": 164854,
+    "page": 47
+  },
+  {
+    "q": "What is the total computational time reported for pretraining the Llama 2 family?",
+    "evidence": "Pretraining utilized a cumulative 3.3M GPU hours of computation on hardware of type A100-80GB",
+    "ev_start": 259428,
+    "ev_end": 259521,
+    "page": 77
+  }
+]
